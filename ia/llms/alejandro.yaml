@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/miguelperezcolom/ec-demo1/master/gitops/ia-catalogue.schema.json
+kind: llm
+id: alejandro
+name: Alejandro
+provider: OPENAI_COMPATIBLE
+model: general-fast
+baseUrl: https://llm-gateway-858438783734.europe-southwest1.run.app/v1
+# Sin credentialEnv: hoy su credencial está puesta desde la consola. Para que git la gobierne hay
+# que añadir la variable al Secret del plano de control y nombrarla aquí.

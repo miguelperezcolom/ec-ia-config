@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/miguelperezcolom/ec-demo1/master/gitops/ia-catalogue.schema.json
+kind: llm
+id: embeddings
+name: Embeddings (local, multilingual)
+provider: OPENAI_COMPATIBLE
+model: intfloat/multilingual-e5-small
+baseUrl: http://embeddings/v1
+temperature: 0
+maxTokens: 256
+# Sin credentialEnv a propósito: TEI no pide clave. La credencial que hay guardada es un relleno,
+# y existe sólo porque el store pgvector se niega a embeber contra una credencial en blanco.

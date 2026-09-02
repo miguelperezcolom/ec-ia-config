@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/miguelperezcolom/ec-demo1/master/gitops/ia-catalogue.schema.json
+kind: rag
+id: handbook
+name: Ops handbook
+store: PGVECTOR
+# Sin usuario ni contraseña: lo que hay guardado en la base los lleva en la URL, y aquí no entran.
+connectionUrl: jdbc:postgresql://cp-postgres:5432/controlplane
+collection: handbook_vectors
+embeddingLlmId: embeddings
+topK: 5
+description: >-
+  Notes about running this deployment: the services, identity and access, the control plane, and
+  what to check when something is stuck. Search here for how-to and operational questions.

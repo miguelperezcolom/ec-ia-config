@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/miguelperezcolom/ec-demo1/master/gitops/ia-catalogue.schema.json
+kind: mcp
+id: booking
+name: Booking service
+url: http://booking:8108
+transport: SSE
+description: Las reservas — listarlas, leerlas y crearlas.
