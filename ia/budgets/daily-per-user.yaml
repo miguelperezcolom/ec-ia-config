@@ -7,4 +7,4 @@ scope: USER
 # cada usuario se capa con su propia entrada.
 subject: demo
 period: DAY
-limitTokens: 200000
+limitTokens: 150000
