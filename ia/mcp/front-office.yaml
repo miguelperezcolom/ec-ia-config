@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/miguelperezcolom/ec-demo1/master/gitops/ia-catalogue.schema.json
+kind: mcp
+id: front-office
+name: Front office (recepción)
+url: http://front-office:8128
+transport: SSE
+timeoutSeconds: 60
+description: La recepción del hotel — llegadas y salidas de hoy, estancias, huéspedes y su kárdex, folios, habitaciones libres; y las operaciones del mostrador (check-in, check-out, no show, walk-in, cambio de habitación, late check-out, edición del kárdex), cada una confirmada por la persona antes de hacerse.
