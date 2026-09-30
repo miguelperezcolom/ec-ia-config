@@ -9,6 +9,7 @@ mcp:
   - forms
   - booking
   - customer-mdm
+  - notices
 rag:
   - handbook
 enabled: true
