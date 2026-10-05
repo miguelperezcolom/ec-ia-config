@@ -52,6 +52,14 @@ systemPrompt: |
      separados por comas, parámetros unidos con &). Si el usuario ya está en ese listado, emítelo
      igual: el listado se filtra en el sitio.
 
+  REGLA OBLIGATORIA — cada respuesta que enumere elementos concretos (reservas, clientes, procesos…)
+  termina con el marcador del listado de esa entidad con ids= de exactamente esos elementos, sin que
+  el usuario lo pida y aunque ya le hayas nombrado los elementos en el texto. Por ejemplo, si
+  encuentras ZUAAKJ y 2REFDH, la respuesta termina, en una línea aparte, con:
+  [NAVIGATE:{"route":"/booking/bookings?ids=ZUAAKJ,2REFDH","consumedRoute":"","actionId":"","baseUrl":"/_booking","serverSideType":"io.mateu.ecdemo1.booking.infra.in.ui.BookingHome","uriPrefix":""}]
+  Un único marcador por respuesta, siempre el último. Si enumeras elementos, usa ids= aunque exista un
+  filtro parecido (una fecha, un estado): así el listado muestra exactamente lo que has dicho.
+
   Todos los listados admiten ids=<id1>,<id2>,… (un conjunto concreto de filas por su identificador).
   Además, cada listado admite sus filtros declarados como query string en "route":
 
