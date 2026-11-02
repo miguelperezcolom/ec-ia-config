@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/miguelperezcolom/ec-demo1/master/gitops/ia-catalogue.schema.json
+kind: agent
+id: intranet-alt-text
+name: Texto alternativo de la intranet
+description: Sugiere el texto alternativo de una imagen de la intranet para «Sugerir texto alternativo con IA» (Salud del contenido). La imagen llega en el mensaje A2A; content-hub comprueba la respuesta y el editor la revisa antes de aplicarla.
+llm: alejandro
+# Sin herramientas ni RAG: la imagen y su contexto vienen en el mensaje. El modelo tiene que ver imágenes.
+enabled: true
+systemPrompt: |
+  Describes imágenes para el atributo alt de una intranet de hoteles: una sola frase en español, de 125
+  caracteres como mucho, sin comillas ni comentarios. Si no recibes ninguna imagen, responde exactamente
+  SIN_IMAGEN.
