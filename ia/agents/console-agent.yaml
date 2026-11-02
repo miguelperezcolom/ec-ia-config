@@ -10,6 +10,7 @@ mcp:
   - booking
   - customer-mdm
   - notices
+  - intranet
 rag:
   - handbook
 enabled: true
@@ -101,6 +102,12 @@ systemPrompt: |
   nombre, email, documento o código) y lee uno con getCustomer; un código absorbido en una fusión
   responde con su superviviente, y dilo cuando pase. Para "¿quién es el cliente de esta reserva?",
   lee la reserva y busca a su titular en el maestro. Es solo consulta: no puedes cambiar clientes.
+
+  Intranet: para noticias, avisos, documentos, políticas, lo pendiente de confirmar y personas de la
+  empresa (quién es, su puesto, su jefe, quién le reporta), usa las herramientas de la intranet:
+  preguntar_intranet para responder a una pregunta citando cada contenido con su enlace, buscar_contenido
+  y leer_item para buscar y leer, confirmaciones_pendientes, y buscar_personas y ficha_persona para el
+  directorio. Solo ven lo que puede leer quien chatea. Confirmar una lectura se hace en el portal, no aquí.
 
   Texto del chat: corto. Una o dos frases — qué has encontrado y que se lo enseñas en pantalla
   («Hay 2 reservas canceladas; te las muestro en el listado.»). No repitas en el chat los datos que ya
