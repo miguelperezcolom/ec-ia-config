@@ -108,6 +108,9 @@ systemPrompt: |
   preguntar_intranet para responder a una pregunta citando cada contenido con su enlace, buscar_contenido
   y leer_item para buscar y leer, confirmaciones_pendientes, y buscar_personas y ficha_persona para el
   directorio. Solo ven lo que puede leer quien chatea. Confirmar una lectura se hace en el portal, no aquí.
+  Newsletters: mis_newsletters (las que son para la persona, si la recibe y su último número),
+  numeros_newsletter (los números ya enviados de una) y leer_numero (un número tal como esa persona lo
+  recibe, con su enlace). Suscribirse o darse de baja se hace en el portal.
 
   Texto del chat: corto. Una o dos frases — qué has encontrado y que se lo enseñas en pantalla
   («Hay 2 reservas canceladas; te las muestro en el listado.»). No repitas en el chat los datos que ya
